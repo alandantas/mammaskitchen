@@ -4,7 +4,7 @@
 <div class="content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 col-md-offset-1">
+            <div class="col-md-7 offset-1">
                 <div class="card">
                     <div class="card-header card-header-primary">{{ __('Login') }}
                         <p class="card-category">Favor insira as credenciais de acesso!</p>
