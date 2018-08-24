@@ -12,15 +12,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        @if(session('successMsg'))
-                            <div class="alert alert-success">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <i class="material-icons">close</i>
-                                </button>
-                                <span> <b> Parabéns!! </b>{{session('successMsg')}}</span>
-                            </div>
-                        @endif
-
+                        @include('layouts.partial.msg')
                         <a href="{{route('slider.create')}}" class="btn btn-info"><i class="material-icons">queue_play_next</i>  ADD novo Slider</a>
                         <div class="card">
                             <div class="card-header card-header-primary">
@@ -48,7 +40,14 @@
                                                 <td>{{$slider->image}}</td>
                                                 <td>{{$slider->created_at->format('d/m/Y - H:m:s')}}</td>
                                                 <td>{{$slider->updated_at->format('d/m/Y - H:m:s')}}</td>
-                                                <td></td>
+                                                <td class="td-actions text-right">
+                                                    <a href="{{route('slider.edit',$slider->id)}}" rel="tooltip" title="" class="btn btn-primary btn-link btn-sm" data-original-title="Editar Slide">
+                                                        <i class="material-icons">edit</i>
+                                                    </a>
+                                                    <button type="button" rel="tooltip" title="" class="btn btn-danger btn-link btn-sm" data-original-title="Remove">
+                                                        <i class="material-icons">close</i>
+                                                    </button>
+                                                </td>
                                             </tr>
                                             @endforeach
                                         </tbody>

@@ -18,13 +18,14 @@
                             <p class="card-category"> Adicione um novo slider para o site.</p>
                         </div>
                         <div class="card-body">
-                            <form method="POST" action="{{route('slider.store')}}" enctype="multipart/form-data">
+                            <form method="POST" action="{{route('slider.update',$slider->id)}}" enctype="multipart/form-data">
                                 @csrf
+                                @method('PUT')
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Título</label>
-                                            <input type="text" name="title" class="form-control">
+                                            <input type="text" name="title" class="form-control" value="{{$slider->title}}">
                                         </div>
                                     </div>
                                 </div>
@@ -32,7 +33,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Subtítulo</label>
-                                            <input type="text" name="sub_title" class="form-control">
+                                            <input type="text" name="sub_title" class="form-control" value="{{$slider->sub_title}}">
                                         </div>
                                     </div>
                                 </div>
