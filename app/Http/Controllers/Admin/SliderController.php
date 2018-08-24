@@ -121,7 +121,7 @@ class SliderController extends Controller
         $slider->sub_title = $request->sub_title;
         $slider->image = $imagename;
         $slider->save();
-        return redirect()->route('slider.index')->with('successMsg','Slider modificado com sucesso!');
+        return redirect()->route('slider.index')->with('successMsg','Slider Modificado com Sucesso!');
     }
 
     /**
@@ -132,6 +132,10 @@ class SliderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $slider = Slider::find($id);
+        unlink('uploads/slider/'.$slider->image);
+        $slider->delete();
+        return redirect()->back()->with('successMsg','Slider Deletado com Sucesso!');
+
     }
 }
