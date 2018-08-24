@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
+        <link rel="icon" type="image/png" href="{{asset('backend/img/favicon.png')}}">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +10,8 @@
         <title>Mamma's Kitchen</title>
 
         <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}} ">
-    <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.css')}}">
         <link rel="stylesheet" href="{{asset('frontend/css/owl.theme.css')}}">
         <link rel="stylesheet" href="{{asset('frontend/css/animate.css')}}">
         <link rel="stylesheet" href="{{asset('frontend/css/flexslider.css')}}">

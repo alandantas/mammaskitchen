@@ -14,8 +14,8 @@
                     @include('layouts.partial.msg')
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title mt-0">ADD NOVO SLIDER</h4>
-                            <p class="card-category"> Adicione um novo slider para o site.</p>
+                            <h4 class="card-title mt-0">EDITAR SLIDER</h4>
+                            <p class="card-category">Faças as devidas alterações no seu slider.</p>
                         </div>
                         <div class="card-body">
                             <form method="POST" action="{{route('slider.update',$slider->id)}}" enctype="multipart/form-data">
