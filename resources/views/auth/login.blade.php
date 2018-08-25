@@ -46,9 +46,7 @@
                                         {{ __('Login') }}
                                     </button>
 
-                                    <button class="btn btn-danger">
-                                        Cancelar
-                                    </button>
+                                    <a class="btn btn-danger" href="{{route('welcome')}}">cancelar</a>
                                 </div>
                                 <div class="col-md-12">
                                     <a class="btn btn-link" href="{{ route('password.request') }}">

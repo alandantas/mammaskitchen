@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-md-12">
                 @include('layouts.partial.msg')
-                <a href="{{route('item.create')}}" class="btn btn-primary"><i class="material-icons">fastfood</i>  ADD NOVO ITEM</a>
+                <a href="{{route('item.create')}}" class="btn btn-primary"><i class="material-icons">restaurant_menu</i> ADD NOVO ITEM</a>
                 <div class="card">
                     <div class="card-header card-header-primary">
                         <h4 class="card-title mt-0">ITENS</h4>
@@ -38,7 +38,7 @@
                                         <td>{{$item->id}}</td>
                                         <td>{{$item->name}}</td>
                                         <td>
-                                            {{--<img class="img-responsive thumbnail" width="80" height="60" src="{{asset('uploads/slider/'.$slider->image)}}">--}}
+                                            <img class="img-responsive thumbnail rounded" width="80" height="60" src="{{asset('uploads/item/'.$item->image)}}">
                                         </td>
                                         <td rel="tooltip" data-original-title="{{$item->category->name}}">{{str_limit($item->category->name, 15)}}</td>
                                         <td rel="tooltip" data-original-title="{{$item->description}}">{{str_limit($item->description, 15)}}</td>
@@ -49,11 +49,11 @@
                                             <a href="{{route('item.edit',$item->id)}}" rel="tooltip" class="btn btn-primary btn-link btn-sm" data-original-title="Editar">
                                                 <i class="material-icons">edit</i>
                                             </a>
-                                            <form id="delete-form-{{$item->id}}" action="{{route('category.destroy',$item->id)}}" style="display: none;" method="POST">
+                                            <form id="delete-form-{{$item->id}}" action="{{route('item.destroy',$item->id)}}" style="display: none;" method="POST">
                                                 @csrf
                                                 @method('DELETE')
                                             </form>
-                                            <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-sm" data-original-title="Deletar" onclick="if (confirm('Deseja realmente deletar essa categoria ?')){
+                                            <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-sm" data-original-title="Deletar" onclick="if (confirm('Deseja realmente deletar esse item ?')){
                                                 event.preventDefault();
                                                 document.getElementById('delete-form-{{$item->id}}').submit();
                                             }else {

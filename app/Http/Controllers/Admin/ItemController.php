@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Category;
 use App\Item;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -26,7 +28,8 @@ class ItemController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::all();
+        return view('admin.item.create', compact('categories'));
     }
 
     /**
@@ -37,7 +40,38 @@ class ItemController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+           'name' => 'required',
+            'category' => 'required',
+            'description' => 'required',
+            'price'=> 'required',
+            'image' => 'required|mimes:jpeg,jpg,png',
+        ]);
+        $image = $request->file('image');
+        $slug = str_slug($request->name);
+        if (isset($image))
+        {
+            $currentDate = Carbon::now()->toDateString();
+            $imagename = $slug.'-'.$currentDate.'-'. uniqid() .'.'. $image->getClientOriginalExtension();
+
+            if (!file_exists('uploads/item'))
+            {
+                mkdir('uploads/item',0777, true);
+            }
+            $image->move('uploads/item',$imagename);
+        }else{
+            $imagename = "default.png";
+        }
+        $item = new Item();
+        $item->category_id = $request->category;
+        $item->name = $request->name;
+        $item->description = $request->description;
+        $item->price = $request->price;
+        $item->image = $imagename;
+        $item->save();
+        return redirect()->route('item.index')->with('successMsg', 'Item Cadastrado com Sucesso :)');
+
+
     }
 
     /**

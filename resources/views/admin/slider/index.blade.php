@@ -37,7 +37,7 @@
                                         <td rel="tooltip" data-original-title="{{$slider->title}}">{{str_limit($slider->title, 15)}}</td>
                                         <td  rel="tooltip" data-original-title="{{$slider->sub_title}}">{{str_limit($slider->sub_title, 15)}}</td>
                                         <td>
-                                            <img class="img-responsive thumbnail" width="80" height="60" src="{{asset('uploads/slider/'.$slider->image)}}">
+                                            <img class="img-responsive thumbnail rounded" width="80" height="60" src="{{asset('uploads/slider/'.$slider->image)}}">
                                         </td>
                                         <td>{{$slider->created_at->format('d/m/Y - H:m:s')}}</td>
                                         <td>{{$slider->updated_at->format('d/m/Y - H:m:s')}}</td>

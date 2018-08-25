@@ -31,7 +31,7 @@
           </li>
           <li class="nav-item {{Request::is('admin/item*')? 'active' : ''}}">
             <a class="nav-link" href="{{route('item.index')}}">
-              <i class="material-icons">fastfood</i>
+              <i class="material-icons">restaurant_menu</i>
               <p>Itens</p>
             </a>
           </li>
