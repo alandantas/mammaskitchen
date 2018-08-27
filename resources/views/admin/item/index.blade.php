@@ -38,7 +38,7 @@
                                         <td>{{$item->id}}</td>
                                         <td>{{$item->name}}</td>
                                         <td>
-                                            <img class="img-responsive thumbnail rounded" width="80" height="60" src="{{asset('uploads/item/'.$item->image)}}">
+                                            <img class="img-responsive img-thumbnail rounded" width="80" height="60" src="{{asset('uploads/item/'.$item->image)}}">
                                         </td>
                                         <td rel="tooltip" data-original-title="{{$item->category->name}}">{{str_limit($item->category->name, 15)}}</td>
                                         <td rel="tooltip" data-original-title="{{$item->description}}">{{str_limit($item->description, 15)}}</td>
