@@ -35,12 +35,12 @@
               <p>Itens</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./tables.html">
-              <i class="material-icons">content_paste</i>
-              <p>Table List</p>
-            </a>
-          </li>
+            <li class="nav-item {{Request::is('admin/reservation*')? 'active' : ''}}">
+                <a class="nav-link" href="{{route('reservation.index')}}">
+                    <i class="material-icons">date_range</i>
+                    <p>Reservas</p>
+                </a>
+            </li>
           <li class="nav-item ">
             <a class="nav-link" href="./typography.html">
               <i class="material-icons">library_books</i>
