@@ -39,10 +39,10 @@
                                             <td rel="tooltip" data-original-title="{{$contact->message}}">{{str_limit($contact->message, 15)}}</td>
                                             <td>{{$contact->created_at->format('d/m/Y - H:m:s')}}</td>
                                             <td class="td-actions text-right">
-                                                <a href="" rel="tooltip" class="btn btn-primary btn-link btn-sm" data-original-title="Editar">
-                                                    <i class="material-icons">edit</i>
+                                                <a href="{{route('contact.show',$contact->id)}}" rel="tooltip" class="btn btn-primary btn-link btn-sm" data-original-title="Visualizar">
+                                                    <i class="material-icons">search</i>
                                                 </a>
-                                                <form id="delete-form-{{$contact->id}}" action="{{route('slider.destroy',$contact->id)}}" style="display: none;" method="POST">
+                                                <form id="delete-form-{{$contact->id}}" action="{{route('contact.destroy',$contact->id)}}" style="display: none;" method="POST">
                                                     @csrf
                                                     @method('DELETE')
                                                 </form>

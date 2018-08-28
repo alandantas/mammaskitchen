@@ -40,7 +40,7 @@
           <li class="nav-item {{Request::is('admin/contact*')? 'active' : ''}}">
             <a class="nav-link" href="{{route('contact.index')}}">
                 <i class="material-icons">contact_mail</i>
-                <p>Mensagens <span class="badge badge-pill badge-warning"> {{$contacts->count()}} </span></p>
+                <p>Mensagens <span class="badge badge-pill badge-warning"></span></p>
             </a>
           </li>
           <li class="nav-item ">
