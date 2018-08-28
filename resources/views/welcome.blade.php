@@ -62,13 +62,13 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="Food-fair-toggle">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#pricing">pricing</a></li>
-                        <li><a href="#great-place-to-enjoy">beer</a></li>
-                        <li><a href="#breakfast">bread</a></li>
-                        <li><a href="#featured-dish">featured</a></li>
-                        <li><a href="#reserve">reservation</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#pricing">Preços</a></li>
+                        <li><a href="#great-place-to-enjoy">Cervejas</a></li>
+                        <li><a href="#breakfast">Pães</a></li>
+                        <li><a href="#featured-dish">Destaques</a></li>
+                        <li><a href="#reserve">Reservas</a></li>
+                        <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.row -->
@@ -100,7 +100,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 dis-table-cell">
                             <div class="section-content">
-                                <h2 class="section-content-title">About us</h2>
+                                <h2 class="section-content-title">Sobre</h2>
                                 <p class="section-content-para">
                                     Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
                                 </p>
@@ -178,7 +178,7 @@
                 <div class="container-fluid">
                     <div class="row dis-table">
                         <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
-                            <h2 class="section-title">Great Place to enjoy</h2>
+                            <h2 class="section-title">Ótimo Lugar para Desfrutar</h2>
                         </div>
                         <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
 
@@ -201,7 +201,7 @@
 
                     <div class="col-xs-12 col-sm-6 dis-table-cell">
                         <div class="section-content">
-                            <h2 class="section-content-title">Our Beer</h2>
+                            <h2 class="section-content-title">Cervejas</h2>
                             <div class="section-description">
                                 <p class="section-content-para">
                                     Astronomy compels the soul to look upward, and leads us from this world to another.  Curious that we spend more time congratulating people who have succeeded than encouraging people who have not. As we got further and further away, it [the Earth] diminished in size.
@@ -225,7 +225,7 @@
                 <div class="container-fluid">
                     <div class="row dis-table">
                         <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
-                            <h2 class="section-title">Our Breakfast Menu</h2>
+                            <h2 class="section-title">Café da Manhã</h2>
                         </div>
                         <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
 
@@ -248,7 +248,7 @@
                     <div class="col-xs-12 col-sm-6 dis-table-cell">
                         <div class="section-content">
                             <h2 class="section-content-title">
-                                Our Bread
+                                Pães
                             </h2>
                             <div class="section-description">
                                 <p class="section-content-para">
@@ -274,7 +274,7 @@
                 <div class="container-fluid">
                     <div class="row dis-table">
                         <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
-                            <h2 class="section-title">Our Featured Dishes Menu</h2>
+                            <h2 class="section-title">Pratos em Destaque</h2>
                         </div>
                         <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
 
@@ -296,12 +296,12 @@
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <div class="row">
                                     <div class="menu-catagory">
-                                        <h2>Bread</h2>
+                                        <h2>Pães</h2>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">French Bread</h3>
+                                        <h3 class="menu-title">Pão Francês</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -318,7 +318,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">Italian Bread</h3>
+                                        <h3 class="menu-title">Pão Italiano</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -335,7 +335,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">Regular Bread</h3>
+                                        <h3 class="menu-title">Pão Cará</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -355,12 +355,12 @@
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <div class="row">
                                     <div class="menu-catagory">
-                                        <h2>Drinks</h2>
+                                        <h2>Bebidas</h2>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">Regular Tea</h3>
+                                        <h3 class="menu-title">Chá</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -377,7 +377,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">Garlic Tea</h3>
+                                        <h3 class="menu-title">Chá de alho</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -394,7 +394,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">Black Coffee</h3>
+                                        <h3 class="menu-title">Café</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -414,7 +414,7 @@
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <div class="row">
                                     <div class="menu-catagory">
-                                        <h2>Meat</h2>
+                                        <h2>Refeições</h2>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -436,7 +436,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">Sausage</h3>
+                                        <h3 class="menu-title">Linguiça</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -453,7 +453,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">Chicken Balls</h3>
+                                        <h3 class="menu-title">Frango</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -473,12 +473,12 @@
                             <div class="col-md-3 col-sm-6 col-xs-12">
                                 <div class="row">
                                     <div class="menu-catagory">
-                                        <h2>Special</h2>
+                                        <h2>Especiais</h2>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">Chicken Balls</h3>
+                                        <h3 class="menu-title">Bolinhas de Frango</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -512,7 +512,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="menu-item">
-                                        <h3 class="menu-title">Sausage</h3>
+                                        <h3 class="menu-title">Linguiça</h3>
                                         <p class="menu-about">Astronomy compels the soul</p>
 
                                         <div class="menu-system">
@@ -592,7 +592,7 @@
                         </div>
 
                         <div class="gallery-heading hidden-xs color-bg" style="width: 50%; float:right;">
-                            <h2 class="section-title">Have A Look To Our Dishes</h2>
+                            <h2 class="section-title">Veja alguns de nossos pratos</h2>
                         </div>
 
 
@@ -611,7 +611,7 @@
                 <div class="container-fluid">
                     <div class="row dis-table">
                         <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
-                            <h2 class="section-title">Reservar uma Mesa !</h2>
+                            <h2 class="section-title">Reserve uma Mesa !</h2>
                         </div>
                         <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
 
@@ -746,12 +746,12 @@
                                 </div>
 
                                 <div class="col-md-6 col-sm-6">
-                                    <textarea name="message" type="text" class="form-control" id="message" rows="7" placeholder="Mensagem"></textarea>
+                                    <textarea name="message" type="text" class="form-control" id="message" rows="7" placeholder="Deixe aqui sua mensagem..."></textarea>
                                 </div>
 
                                 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
                                     <div class="text-center">
-                                        <button type="submit" id="submit" name="submit" class="btn btn-send">Enviar </button>
+                                        <button type="submit" id="submit" name="submit" class="btn btn-send">Enviar</button>
                                     </div>
                                 </div>
                             </form>
@@ -760,7 +760,6 @@
                 </div>
             </div>
         </section>
-
 
         <footer>
             <div class="container">

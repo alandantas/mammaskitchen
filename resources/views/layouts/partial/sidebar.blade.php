@@ -37,12 +37,12 @@
               <p>Itens</p>
             </a>
           </li>
-            <li class="nav-item {{Request::is('admin/reservation*')? 'active' : ''}}">
-                <a class="nav-link" href="{{route('reservation.index')}}">
-                    <i class="material-icons">date_range</i>
-                    <p>Reservas</p>
-                </a>
-            </li>
+          <li class="nav-item {{Request::is('admin/contact*')? 'active' : ''}}">
+            <a class="nav-link" href="{{route('contact.index')}}">
+                <i class="material-icons">contact_mail</i>
+                <p>Mensagens <span class="badge badge-pill badge-warning"> {{$contacts->count()}} </span></p>
+            </a>
+          </li>
           <li class="nav-item ">
             <a class="nav-link" href="./typography.html">
               <i class="material-icons">library_books</i>
