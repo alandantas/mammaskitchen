@@ -12,7 +12,7 @@
 */
 
 Route::get('/','HomeController@index')->name('welcome');
-
+Route::post('/reservation','ReservationController@reserve')->name('reservation.reserve');
 Auth::routes();
 
 Route::group(['prefix'=>'admin','middleware'=>'auth','namespace'=>'admin'], function (){
