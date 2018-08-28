@@ -49,13 +49,23 @@
                                             </th>
                                             <td>{{$reservation->created_at->format('d/m/Y - H:m:s')}}</td>
                                             <td class="td-actions text-right">
-                                                <a href="" rel="tooltip" class="btn btn-primary btn-link btn-sm" data-original-title="Editar">
-                                                    <i class="material-icons">edit</i>
-                                                </a>
-                                                <form id="delete-form-{{$reservation->id}}" action="" style="display: none;" method="POST">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                </form>
+                                                @if($reservation->status == false)
+                                                    <form id="status-form-{{$reservation->id}}" action="{{route('reservation.status',$reservation->id)}}" style="display: none;" method="POST">
+                                                        @csrf
+                                                    </form>
+                                                    <button type="button" rel="tooltip" class="btn btn-info btn-link btn-sm" data-original-title="Confirmar" onclick="if (confirm('Deseja Aprovar a Reserva ?')){
+                                                            event.preventDefault();
+                                                            document.getElementById('status-form-{{$reservation->id}}').submit();
+                                                            }else {
+                                                            event.preventDefault();
+                                                            } ">
+                                                        <i class="material-icons">done</i>
+                                                    </button>
+                                                @endif
+                                            <form id="delete-form-{{$reservation->id}}" action="{{route('reservation.destroy',$reservation->id)}}" style="display: none;" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                            </form>
                                                 <button type="button" rel="tooltip" class="btn btn-danger btn-link btn-sm" data-original-title="Deletar" onclick="if (confirm('Deseja deletar essa Reserva ?')){
                                                         event.preventDefault();
                                                         document.getElementById('delete-form-{{$reservation->id}}').submit();
@@ -77,7 +87,6 @@
             </div>
         </div>
     </div>
-
 @endsection
 
 @push('scripts')

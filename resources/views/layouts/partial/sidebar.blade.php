@@ -4,10 +4,12 @@
 
       Tip 2: you can also add an image using data-image tag
   -->
-    <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-            Creative Tim
-        </a>
+    <div class="logo-container">
+        <div class="logo">
+            <a href="{{route('admin.dashboard')}}" class="simple-text logo-normal">
+                <img class="img-responsive" src="{{asset('frontend/images/Logo_main.png')}}" width="170" height="120" alt="">
+            </a>
+        </div>
     </div>
     <div class="sidebar-wrapper">
         <ul class="nav">
