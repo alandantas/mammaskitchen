@@ -38,7 +38,7 @@
                                             <td>{{$contact->subject}}</td>
                                             <td rel="tooltip" data-original-title="{{$contact->message}}">{{str_limit($contact->message, 15)}}</td>
                                             <td>{{$contact->created_at->format('d/m/Y - H:m:s')}}</td>
-                                            <td class="td-actions text-right">
+                                            <td class="td-actions">
                                                 <a href="{{route('contact.show',$contact->id)}}" rel="tooltip" class="btn btn-primary btn-link btn-sm" data-original-title="Visualizar">
                                                     <i class="material-icons">search</i>
                                                 </a>

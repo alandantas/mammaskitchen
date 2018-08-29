@@ -15,7 +15,7 @@
                     <div class="card">
                         <div class="card-header card-header-primary">
                             <h4 class="card-title mt-0">MENSAGENS</h4>
-                            <p class="card-category">Detalhes da mensagem</p>
+                            <p class="card-category">Recebida em: {{$contact->created_at->format('d/m/Y - H:i:s')}}</p>
                         </div>
                         <div class="card-body">
                             <div class="row">

@@ -39,8 +39,10 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label class="control-label">Imagem</label>
-                                        <input type="file" name="image">
+                                        <label class="control-label"></label>
+                                        <img class="img-responsive thumbnail rounded" width="80" height="60" src="{{asset('uploads/slider/'.$slider->image)}}">
+                                        <input type="file" name="image"><br>
+                                        <small class="text-muted">JPG|PNG|JPEG.</small>
                                     </div>
                                 </div>
                                 <br> <a href="{{route('slider.index')}}" class="btn btn-danger">voltar</a>

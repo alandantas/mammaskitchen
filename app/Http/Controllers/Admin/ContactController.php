@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Contact;
-use function foo\func;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 

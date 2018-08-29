@@ -27,7 +27,7 @@
           </li>
           <li class="nav-item {{Request::is('admin/category*')? 'active' : ''}}">
             <a class="nav-link" href="{{route('category.index')}}">
-              <i class="material-icons">category</i>
+              <i class="material-icons">restaurant</i>
               <p>Categorias</p>
             </a>
           </li>
@@ -37,18 +37,19 @@
               <p>Itens</p>
             </a>
           </li>
-          <li class="nav-item {{Request::is('admin/contact*')? 'active' : ''}}">
-            <a class="nav-link" href="{{route('contact.index')}}">
-                <i class="material-icons">contact_mail</i>
-                <p>Mensagens <span class="badge badge-pill badge-warning"></span></p>
+          <li class="nav-item {{Request::is('admin/reservation*')? 'active' : ''}}">
+            <a class="nav-link" href="{{route('reservation.index')}}">
+                <i class="material-icons">date_range</i>
+                <p>Reservas</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
-              <i class="material-icons">library_books</i>
-              <p>Typography</p>
-            </a>
-          </li>
+            <li class="nav-item {{Request::is('admin/contact*')? 'active' : ''}}">
+                <a class="nav-link" href="{{route('contact.index')}}">
+                    <i class="material-icons">message</i>
+                    <p>Mensagens</p>
+                </a>
+            </li>
+
           <!-- <li class="nav-item active-pro ">
                 <a class="nav-link" href="./upgrade.html">
                     <i class="material-icons">unarchive</i>
