@@ -47,7 +47,7 @@
                                                     <span class="badge badge-warning">Pendente</span>
                                                 @endif
                                             </th>
-                                            <td>{{$reservation->created_at->format('d/m/Y - H:m:s')}}</td>
+                                            <td>{{$reservation->created_at->format('d/m/Y - H:i:s')}}</td>
                                             <td class="td-actions text-right">
                                                 @if($reservation->status == false)
                                                     <form id="status-form-{{$reservation->id}}" action="{{route('reservation.status',$reservation->id)}}" style="display: none;" method="POST">
