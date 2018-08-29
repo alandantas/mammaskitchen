@@ -15,7 +15,7 @@
                 <a href="{{route('category.create')}}" class="btn btn-primary"><i class="material-icons">playlist_add</i>  ADD Nova Categoria</a>
                 <div class="card">
                     <div class="card-header card-header-primary">
-                        <h4 class="card-title mt-0">CATEGORIAS <span class="badge badge-warning">{{$categories->count()}}</span></h4>
+                        <h4 class="card-title mt-0">CATEGORIAS</h4>
                         <p class="card-category">Listagem das categorias</p>
                     </div>
                     <div class="card-body">
